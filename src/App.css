@@ -14,8 +14,18 @@
 }
 
 .App-header {
+
+  background-color: black;
+  min-height: 100%;
+  
+  font-size: calc(10px + 2vmin);
+  color: white; 
+}
+
+.App-body {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 95vh;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,6 +33,13 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+
+.App-footer{
+  background-color: #282c34;
+  color: white;
+}
+
 
 .App-link {
   color: #61dafb;
@@ -35,4 +52,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+a{
+  display: inline-block;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 0.75em;
+}
+
+
+
+a:hover{
+  color:black;
+  background-color: white;
+  transition: 1s;
 }
