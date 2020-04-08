@@ -8,9 +8,12 @@ function Accueil(){
 
 
     return(
+     
+        
         
      <div className="App">
-     <section className="App-body" id="Sec1">         
+     <section className="App-body" id="Sec1">       
+
      <br></br>
      <br></br>
      <br></br>
@@ -39,7 +42,11 @@ function Accueil(){
             <li style={{marginRight: 100, listStyle: 'none'}}>test</li>
         </ul>
     
-    
+      </body>
+      <section className="App-body">
+        <Link to="/Connexion"><button>Connexion</button></Link>
+        <Link to="/Inscription"><button>Inscription</button></Link>
+      </section>  
     
             {/* <section style={{display:"inline-block"}}>
         Sleep & Study est une startup qui met en relation des hôtes et des étudiants à
@@ -54,11 +61,7 @@ le cadre de leurs études en alternance
 le cadre de leurs études en alternance.
             </section> */}
 
-      </body>
-      {/* <section className="App-body">
-      <Link to="/Connexion"><button>Connexion</button></Link>
-      <Link to="/Inscription"><button>Inscription</button></Link>
-      </section> */}
+
     
     </div>
 
