@@ -38,7 +38,12 @@ function Accueil(){
             <li style={{marginLeft: 100, listStyle: 'none'}}>test</li>
             <li style={{marginRight: 100, listStyle: 'none'}}>test</li>
         </ul>
-    
+        
+        </body>
+      <section className="App-body">
+      <Link to="/Connexion"><button>Connexion</button></Link>
+      <Link to="/Inscription"><button>Inscription</button></Link>
+      </section>
     
     
             {/* <section style={{display:"inline-block"}}>
