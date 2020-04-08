@@ -19,26 +19,22 @@ function App() {
 
     <div className="App">
       <header className="App-header">        
-          <nav>
-            <h1>S&S</h1>
+          <nav>            
+            <img src={logo} alt="logo" id="header-logo"></img>
+            <div id="menu">
             <Router> 
-            <Navigation/>
-      <Route path="/" exact component={Accueil}/>
-      <Route path="/Carte" exact component={Carte}/>
-      <Route path="/Logement" exact component={Logement}/>
-      <Route path="/Search" exact component={Search}/>
-      <Route path="/Contact" exact component={Contact}/>
-    </Router>
+              <Navigation/>
+              <Route path="/" exact component={Accueil}/>
+              <Route path="/Carte" exact component={Carte}/>
+              <Route path="/Logement" exact component={Logement}/>
+              <Route path="/Search" exact component={Search}/>
+              <Route path="/Contact" exact component={Contact}/>
+          </Router>
+          </div>
           </nav>       
       </header>
 
-      <body className="App-body">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          L'appli de l'hébergement étudiant!
-        </p>
-
-      </body>
+      
       <footer className="App-footer">#FreeJean-Chorrizo</footer>
 
     </div>

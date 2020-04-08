@@ -5,7 +5,9 @@ function Search(){
 
 
     return(
-        <h1>Section Recherche Ciblée</h1>
+        <body>
+            <h1>Section Recherche Ciblée</h1>
+        </body>
     )
 }
 

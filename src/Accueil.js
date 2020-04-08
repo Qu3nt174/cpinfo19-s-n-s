@@ -22,7 +22,7 @@ function Accueil(){
         </p>
 
       </body>
-      <footer className="App-footer">#FreeJean-Chorrizo</footer>
+    
 
     </div>
     )

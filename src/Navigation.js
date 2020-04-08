@@ -11,7 +11,7 @@ function Navigation(){
             </Link>
             
             <Link to="/Carte">
-                <li style={{marginLeft: 10, listStyle: 'none'}}>Carte</li>
+                <li style={{marginLeft: 10, listStyle: 'none', textDecoration:"none"}}>Carte</li>
             </Link>
             
             <Link to="/Logement">
