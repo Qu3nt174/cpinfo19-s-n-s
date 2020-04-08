@@ -9,13 +9,22 @@ import Navigation from './Navigation';
 import Search from './Search';
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 
+const firebase = require("firebase");
+// Required for side-effects
+require("firebase/firestore");
 
+firebase.initializeApp({
+  apiKey: 'AIzaSyBggSxraSXC0zUGPIa96BhPu8x-ZvpeBRU',
+  authDomain: 'eur3',
+  projectId: 'cpinfo-s-n-s'
+});
 
+var db = firebase.firestore();
 
 function App() {
 
   return (    
-    
+
 
     <div className="App">
       <header className="App-header">        
