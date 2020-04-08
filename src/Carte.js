@@ -5,7 +5,7 @@ function Carte(){
 
 
     return(
-        <h1>Section Carte des logements</h1>
+        <h1>Section Carte des logements ! </h1>
     )
 }
 
