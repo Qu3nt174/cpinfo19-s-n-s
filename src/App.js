@@ -8,6 +8,7 @@ import Contact from './Contact';
 import Navigation from './Navigation';
 import Search from './Search';
 import Connexion from './Connexion';
+import Inscription from './Inscription';
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 
 
@@ -31,6 +32,7 @@ function App() {
               <Route path="/Search" exact component={Search}/>
               <Route path="/Contact" exact component={Contact}/>
               <Route path="/Connexion" exact component={Connexion}/>
+              <Route path="/Inscription" exact component={Inscription}/>
               
           </Router>
           </div>

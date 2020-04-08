@@ -17,7 +17,8 @@ function Accueil(){
           L'appli de l'hébergement étudiant!
         </p>
 
-        <Link to="/Connexion"><button>connexion</button></Link>
+        <Link to="/Connexion"><button>Connexion</button></Link>
+        <Link to="/Inscription"><button>Inscription</button></Link>
       </body>
     
 
