@@ -36,7 +36,8 @@ function App() {
               
           </Router>
           </div>
-          </nav>       
+          </nav>
+          
       </header>
       
 

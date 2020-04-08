@@ -23,7 +23,7 @@ function Navigation(){
             </Link>
             
             <Link to="/Contact">
-                <li style={{marginLeft: 10, listStyle: 'none'}}>Contact</li>
+                <li  style={{marginLeft: 10, listStyle: 'none'}}>Contact</li>
             </Link>
 
         </ul>
