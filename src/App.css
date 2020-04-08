@@ -22,6 +22,7 @@
 }
 #menu{
   background-color: #23a2a4 ;
+  
 }
 
 .App-header {
@@ -58,12 +59,6 @@ button{
   color: white;
 }
 
-
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -76,15 +71,18 @@ button{
 
 a{
   display: inline-block;
-  padding-left: 5%;
-  padding-right: 5%;
   font-size: 0.75em;
   text-decoration: none;
-  color: black;
+  color: white;
   text-align: center;
+  
 }
 
+ul{
+  margin-left: 30%;
+  margin-right: 30%;
 
+}
 
 a:hover{
   color:black;

@@ -7,6 +7,8 @@ import Logement from './Logement';
 import Contact from './Contact';
 import Navigation from './Navigation';
 import Search from './Search';
+import Connexion from './Connexion';
+import Inscription from './Inscription';
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 
 const firebase = require("firebase");
@@ -38,10 +40,14 @@ function App() {
               <Route path="/Logement" exact component={Logement}/>
               <Route path="/Search" exact component={Search}/>
               <Route path="/Contact" exact component={Contact}/>
+              <Route path="/Connexion" exact component={Connexion}/>
+              <Route path="/Inscription" exact component={Inscription}/>
+              
           </Router>
           </div>
           </nav>       
       </header>
+      
 
       
       <footer className="App-footer">#FreeJean-Chorrizo</footer>
