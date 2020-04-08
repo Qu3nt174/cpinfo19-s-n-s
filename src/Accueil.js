@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 import logo from './logo.png';
 import './App.css';
 
@@ -8,12 +9,7 @@ function Accueil(){
 
     return(
          <div className="App">
-      <header className="App-header">        
-          <nav>
-            
-            
-          </nav>       
-      </header>
+     
 
       <body className="App-body">
         <img src={logo} className="App-logo" alt="logo" />
@@ -21,6 +17,7 @@ function Accueil(){
           L'appli de l'hébergement étudiant!
         </p>
 
+        <Link to="/Connexion"><button>connexion</button></Link>
       </body>
     
 
