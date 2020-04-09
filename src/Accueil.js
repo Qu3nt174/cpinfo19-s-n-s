@@ -40,10 +40,10 @@ function Accueil(){
         </ul>
         
         </body>
-      {/* <section className="App-body">
+      <section className="App-body">
       <Link to="/Connexion"><button>Connexion</button></Link>
       <Link to="/Inscription"><button>Inscription</button></Link>
-      </section> */}
+      </section>
     
     
             {/* <section style={{display:"inline-block"}}>
