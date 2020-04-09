@@ -11,23 +11,17 @@ function Accueil(){
         
      <div className="App">
      <section className="App-body" id="Sec1">         
-     <br></br>
-     <br></br>
-     <br></br>
-     <br></br>
-     <br></br>
          <h1 id="oui">
             Sleep &
             <br></br>
             Study
+        </h1>
             <h5>Bienvenue Chez Vous</h5>
-         </h1>
-         <br></br>
-         <br></br>
-         <br></br>
-         <br></br>
-         <br></br>
-         <br></br>
+            <div style={{display:"flex"}}>
+                <Link to="/Connexion"><li style={{listStyle: 'none'}}>Connexion</li></Link>
+                <Link to="/Inscription"><li style={{listStyle: 'none'}}>Inscription</li></Link>
+            </div>
+              
      </section>
 
       <body className="App-body">
@@ -40,10 +34,7 @@ function Accueil(){
         </ul>
         
         </body>
-      <section className="App-body">
-      <Link to="/Connexion"><button>Connexion</button></Link>
-      <Link to="/Inscription"><button>Inscription</button></Link>
-      </section>
+
     
     
             {/* <section style={{display:"inline-block"}}>

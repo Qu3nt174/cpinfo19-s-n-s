@@ -48,7 +48,7 @@ button{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 100% 50%;
-  height: 100%;
+  min-height: -webkit-fill-available;
 }
 
 .App-body {
@@ -64,6 +64,12 @@ button{
 
 h5{
   color: #23a2a4;
+  
+}
+
+h5:hover{
+  color:#deaa38;
+  transition: 1s;
 }
 
 #historique{
@@ -108,7 +114,7 @@ ul{
 
 }
 
-a:hover{
+#Nav-menu:hover{
   color:black;  
   transition:0.5s;
 }

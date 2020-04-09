@@ -9,6 +9,7 @@ import Navigation from './Navigation';
 import Search from './Search';
 import Connexion from './Connexion';
 import Inscription from './Inscription';
+import {Link} from 'react-router-dom';
 
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 
@@ -33,6 +34,8 @@ function App() {
       <header className="App-header">        
           <nav>            
             <img src={logo} alt="logo" id="header-logo"></img>
+           
+           
             <div id="menu">
             <Router> 
               <Navigation/>
