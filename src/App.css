@@ -22,8 +22,17 @@
 }
 #menu{
   background-color: #23a2a4 ;
-  border:solid black 0.5px;
+  border-top:solid black 0.5px;
   
+}
+
+#oui{
+  font-size: 270%;
+}
+
+#test{
+  margin-left: -40%;
+  border-radius: 30%;
 }
 
 .App-header {
@@ -32,12 +41,7 @@
   font-size: calc(10px + 2vmin);
   color: white; 
 }
-button{
-  background-color: black;
-  color: white;
-  border: none;
-  font-size: calc(10px + 2vmin);
-}
+
 #AppPic{
   background-size: cover;
   background-repeat: no-repeat;
@@ -67,6 +71,12 @@ h5{
   
 }
 
+
+label{
+  padding-right:50% ;
+  padding-top: 5%;
+}
+
 h5:hover{
   color:#deaa38;
   transition: 1s;
@@ -76,7 +86,58 @@ h5:hover{
   color: #616161;
 }
 
+#Ul-presentation{
+  margin-left: 30%;
+  margin-right: 30%;
+}
+.presentation{
+  font-size: 60%;
+  color: #616161;
+  padding-left: 2%;
 
+}
+
+#WeeklySec{
+  padding-top: 4%;
+}
+
+#Weeklypres{
+  padding-top: 5%;
+}
+
+#slider{
+  width: 50%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+}
+
+figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  text-align: left;
+  animation: 5s infinite;
+}
+
+ figure img {
+  margin-top: 1%;
+  width: 30%;
+  float: left;
+} 
+
+
+
+#presentation1{
+  border-right: solid;
+  padding-right: 4%;
+}
+
+#presentation2{
+  margin-left: 2%;
+}
 
 
 .App-footer{
@@ -104,8 +165,6 @@ a{
   margin-right: 4%;
   margin-left: 4%;
   padding-left: 4%;
-  
-  
 }
 
 ul{

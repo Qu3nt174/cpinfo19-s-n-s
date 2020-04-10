@@ -23,21 +23,24 @@ function Inscription(){
     }
    
     return(
-        <form>
-            <div>
-                <h1>Section Inscription</h1>
-            <br></br>
-            Nom <input name="nom" type="text" value = {name} onChange = {(n) => setname(n.target.value)} />
-            <br></br>
-                <label>Prenom <input name="prenom" type="text"/></label>
-            <br></br>
-            Mail<input name="mail" type="text" value = {email} onChange= {(e) => setemail(e.target.value)}/>
-            <br></br>
-                <label>Entrer le mdp<input name="mdp" type="text"/></label>
-            <br></br>
-                <button onClick={renseignebdd} > valider</button>
-            </div>
-        </form>
+
+
+        <div className="App">   
+            <body className="App-body">
+            
+            <label>Nom <input name="nom" type="text" value = {name} onChange = {(n) => setname(n.target.value)} /></label>
+            
+            <label>Prenom <input name="prenom" type="text"/></label>
+        
+        <label>Mail<input name="mail" type="text" value = {email} onChange= {(e) => setemail(e.target.value)}/></label>
+        
+            <label>Entrer le mdp<input name="mdp" type="text"/></label>
+        
+            <button onClick={renseignebdd} > valider</button>
+            <br></br>           
+            </body>       
+       </div>
+        
         )
 }
 
