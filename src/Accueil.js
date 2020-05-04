@@ -6,6 +6,7 @@ import Appart1_2 from './photo/Appart1_2.PNG';
 import Appart1_3 from './photo/Appart1_3.PNG';
 
 import './App.css';
+import { _bucketWithOptions } from 'firebase-functions/lib/providers/storage';
 
 
 function Accueil(){
@@ -59,36 +60,30 @@ function Accueil(){
         <section id="WeeklySec">
             <h1 style={{textDecoration:"underline"}}>Les logements de la semaine</h1>
             <div id="Weeklypres">
-                <ul style={{display:"flex", marginLeft: "16%", marginRight: "18%" }}>
-                    <li style={{listStyle: 'none'}}>
-                        <div id="slider">
-                            <figure>
-                                <img  id="img_weeklypres1" src={Appart1_1}/>	
-                                <img  id="img_weeklypres1" src={Appart1_2}/>			                
-                                <img id="img_weeklypres1" src={Appart1_3}/>
-                            </figure>
-		                </div>
+                <ul style={{display:"flex"}}>
+                    <li style={{listStyle:"none", marginRight:"10%"}}>
+                        <img src={Appart1_1} id="header-logo"></img>
                     </li>
-                    <li style={{listStyle: 'none'}}>
-                    <div id="slider">
-                            <figure>
-                                <img id="img_weeklypres2" src={Appart1_3}/>	
-                                <img id="img_weeklypres2" src={Appart1_1}/>			                
-                                <img id="img_weeklypres2" src={Appart1_2}/>				                
-                            </figure>
-		                </div>
+                    <li style={{listStyle:"none", marginRight:"10%"}}>
+                        <img src={Appart1_2} id="header-logo"></img>
                     </li>
-                    <li style={{listStyle: 'none'}}>
-                    <div id="slider">
-                            <figure>
-                                <img style={{width:"40%"}} id="img_weeklypres1" src={logo}/>				                
-                            </figure>
-		                </div>
+                    <li style={{listStyle:"none", marginRight:"10%"}}>
+                        <img src={Appart1_3} id="header-logo"></img>
                     </li>
-                    
                 </ul>
             </div>
+
+
         </section>
+
+        <section id="slogan">
+            <img src={logo} alt="logo" id="header-logo"></img>
+            <h5>Rejoignez nous et commencez l'aventure</h5>
+            <button id="join">Rejoignez-nous</button>
+
+        </section>
+
+
     </body>
     </div>
 

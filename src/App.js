@@ -2,11 +2,11 @@ import React from 'react';
 import logo from './logo.png';
 import './App.css';
 import Accueil from './Accueil';
-import Carte from './Carte';
+import Annonce from './Annonce';
 import Logement from './Logement';
 import Contact from './Contact';
 import Navigation from './Navigation';
-import Search from './Search';
+import Aide from './Aide';
 import Connexion from './Connexion';
 import Inscription from './Inscription';
 import {Link} from 'react-router-dom';
@@ -36,9 +36,9 @@ function App() {
               <Router> 
                 <Navigation/>
                 <Route path="/" exact component={Accueil}/>
-                <Route path="/Carte" exact component={Carte}/>
                 <Route path="/Logement" exact component={Logement}/>
-                <Route path="/Search" exact component={Search}/>
+                <Route path="/Annonce" exact component={Annonce}/>                
+                <Route path="/Aide" exact component={Aide}/>
                 <Route path="/Contact" exact component={Contact}/>
                 <Route path="/Connexion" exact component={Connexion}/>
                 <Route path="/Inscription" exact component={Inscription}/>

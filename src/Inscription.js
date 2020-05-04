@@ -32,7 +32,7 @@ function Inscription(){
             
             <label>Prenom <input name="prenom" type="text"/></label>
         
-        <label>Mail<input name="mail" type="text" value = {email} onChange= {(e) => setemail(e.target.value)}/></label>
+            <label>Mail<input name="mail" type="text" value = {email} onChange= {(e) => setemail(e.target.value)}/></label>
         
             <label>Entrer le mdp<input name="mdp" type="text"/></label>
         
