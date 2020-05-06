@@ -15,10 +15,8 @@ function Connexion(){
         e.preventDefault();
 
         try {
-            
             await auth.signInWithEmailAndPassword(email, pass).then(cred=>{
                 console.log(cred.user);
-
             });
             console.log('OK!');
         } catch (error) {

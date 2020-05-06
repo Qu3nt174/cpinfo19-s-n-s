@@ -18,12 +18,22 @@
 } */
 
 #header-logo{
-  height: 12vmin;
+  height: 12vmin; 
+  margin-right: -3%;
 }
 #menu{
   background-color: #23a2a4 ;
-  border:solid black 0.5px;
+  border-top:solid black 0.5px;
   
+}
+
+#oui{
+  font-size: 270%;
+}
+
+#test{
+  margin-left: -40%;
+  border-radius: 30%;
 }
 
 .App-header {
@@ -32,12 +42,7 @@
   font-size: calc(10px + 2vmin);
   color: white; 
 }
-button{
-  background-color: black;
-  color: white;
-  border: none;
-  font-size: calc(10px + 2vmin);
-}
+
 #AppPic{
   background-size: cover;
   background-repeat: no-repeat;
@@ -67,6 +72,12 @@ h5{
   
 }
 
+
+label{
+  padding-right:50% ;
+  padding-top: 5%;
+}
+
 h5:hover{
   color:#deaa38;
   transition: 1s;
@@ -76,7 +87,50 @@ h5:hover{
   color: #616161;
 }
 
+#Ul-presentation{
+  margin-left: 30%;
+  margin-right: 30%;
+}
+.presentation{
+  font-size: 60%;
+  color: #616161;
+  padding-left: 2%;
 
+}
+
+#WeeklySec{
+  padding-top: 6%;
+}
+
+#Weeklypres{
+  padding-top: 25%;
+  border-bottom: 3px solid;
+}
+
+#slogan{
+  padding-top: 5%;
+}
+#slogan h5{
+   color: #616161;
+}
+
+#join{
+  margin-bottom: 10%;
+  padding: 2% 10% 2% 10%;
+  border-radius: 15%;
+  background-color: #23a2a4;
+}
+
+
+
+#presentation1{
+  border-right: solid;
+  padding-right: 4%;
+}
+
+#presentation2{
+  margin-left: 2%;
+}
 
 
 .App-footer{
@@ -104,8 +158,6 @@ a{
   margin-right: 4%;
   margin-left: 4%;
   padding-left: 4%;
-  
-  
 }
 
 ul{
@@ -142,4 +194,14 @@ ul{
   margin: 5px auto 10px;
   border: none;
   cursor: pointer;
+}
+
+#panel-connexion{
+  float: right;
+  padding: 1%;
+}
+body::-webkit-scrollbar {
+ 
+  display: none;
+
 }

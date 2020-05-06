@@ -10,16 +10,16 @@ function Navigation(){
                 <li id="Nav-menu" style={{marginLeft: 10, listStyle: 'none'}}>Accueil</li>
             </Link>
             
-            <Link to="/Carte">
-                <li id="Nav-menu" style={{marginLeft: 10, listStyle: 'none'}}>Carte</li>
-            </Link>
-            
             <Link to="/Logement">
                 <li id="Nav-menu" style={{marginLeft: 10, listStyle: 'none'}}>Logement</li>
             </Link>
-            
-            <Link to="/Search">
-                <li id="Nav-menu" style={{marginLeft: 10, listStyle: 'none'}}>Search</li>
+
+            <Link to="/Annonce">
+                <li id="Nav-menu" style={{marginLeft: 10, listStyle: 'none'}}>Annonce</li>
+            </Link>
+                      
+            <Link to="/Aide">
+                <li id="Nav-menu" style={{marginLeft: 10, listStyle: 'none'}}>Aide</li>
             </Link>
             
             <Link to="/Contact">
