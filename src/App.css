@@ -18,7 +18,7 @@
 } */
 
 #header-logo{
-  height: 12vmin; 
+  width: 7%;
   margin-right: -3%;
 }
 #menu{
@@ -100,6 +100,40 @@ h5:hover{
 
 #WeeklySec{
   padding-top: 6%;
+}
+
+#slider {
+  width: 50%;
+  max-width: 1000px;
+  overflow: hidden;
+  margin: auto;
+}
+
+#slider figure{
+  position: relative;
+  width: 500%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  text-align: left;
+  animation: 30s slidy infinite;
+}
+#slider figure img {
+  margin-top: 1%;
+  width: 20%;
+  float: left;
+}
+
+@keyframes slidy{
+	0%{left:0%;}
+	20%{left: 0%;}
+	25%{left: -100%;}
+	45%{left: -100%;}
+	50%{left: -100%;}
+	70%{left: -200%;}
+	75%{left: -200%;}
+	95%{left: -200%;}
+	100%{left: 0%;}
 }
 
 #Weeklypres{

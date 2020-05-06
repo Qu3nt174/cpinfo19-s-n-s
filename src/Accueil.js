@@ -59,18 +59,18 @@ function Accueil(){
         
         <section id="WeeklySec">
             <h1 style={{textDecoration:"underline"}}>Les logements de la semaine</h1>
-            <div id="Weeklypres">
-                <ul style={{display:"flex"}}>
-                    <li style={{listStyle:"none", marginRight:"10%"}}>
-                        <img src={Appart1_1} id="header-logo"></img>
-                    </li>
-                    <li style={{listStyle:"none", marginRight:"10%"}}>
-                        <img src={Appart1_2} id="header-logo"></img>
-                    </li>
-                    <li style={{listStyle:"none", marginRight:"10%"}}>
-                        <img src={Appart1_3} id="header-logo"></img>
-                    </li>
-                </ul>
+            <div id="slider">
+                <figure>
+                    
+                        <img src={Appart1_1} id="img_renseignement2"></img>
+                    
+             
+                        <img src={Appart1_2} id="img_renseignement2"></img>
+                    
+                    
+                        <img src={Appart1_3} id="img_renseignement2" ></img>
+                </figure>
+               
             </div>
 
 
