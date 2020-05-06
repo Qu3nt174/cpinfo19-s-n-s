@@ -33,7 +33,7 @@ function App() {
       <header className="App-header">        
           
             <div>
-              <ul style={{display:"flex", float: "right", marginLeft:"-15%", marginRight:"3%"}}>
+              <ul style={{display:"flex", float: "right", marginLeft:"-14%", marginRight:"3%"}}>
                 <li style={{listStyle:"none", marginRight:"10%"}}><a style={{color:"#23a2a4"}} href="http://localhost:3000/Inscription">Inscription</a></li> 
                 /
                 <li style={{listStyle:"none", marginLeft:"2%"}}><a style={{color:"#23a2a4"}} href="http://localhost:3000/Connexion">Connexion</a></li>
