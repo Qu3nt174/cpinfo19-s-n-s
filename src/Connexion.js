@@ -28,7 +28,7 @@ function Connexion(){
     }
 
     return(
-        <div>
+        <div style={{marginTop:"12%", marginBottom:"10%"}}>
           <h3> Se connecter</h3>
             <form className = "FormInscriptionForm" id= "Connexion" onSubmit = {handleClick}>
                 <input className = "FormInscriptioninput" type="email" placeholder="Adresse email" name="mail" value = {email} onChange= {(e) => setemail(e.target.value)} required/>

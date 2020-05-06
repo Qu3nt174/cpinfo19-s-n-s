@@ -44,7 +44,7 @@ function Inscription() {
         // <button type="button" onClick={handleClick}>
         // Go home
         // </button>
-        <div>
+        <div style={{marginTop:"10%", marginBottom:"9.5%"}}>
             <h3> Formulaire d'inscription</h3>
             <form className = "FormInscriptionForm" id= "inscription" onSubmit = {handleClick}>
                 <input className = "FormInscriptioninput" type="text" placeholder="Nom" name="nom" value = {name} onChange= {(n) => setname(n.target.value)} required/>
