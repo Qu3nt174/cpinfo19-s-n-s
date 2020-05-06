@@ -15,7 +15,7 @@ function Navigation(){
             </Link>
 
             <Link to="/Annonce">
-                <li id="Nav-menu" style={{marginLeft: 10, listStyle: 'none'}}>Annonce</li>
+                <li id="Nav-menu" style={{marginLeft: 10, listStyle: 'none'}}> Vos Annonces</li>
             </Link>
                       
             <Link to="/Aide">
@@ -23,7 +23,7 @@ function Navigation(){
             </Link>
             
             <Link to="/Contact">
-                <li id="Nav-menu"  style={{marginLeft: 10, listStyle: 'none'}}>Contact</li>
+                <li id="Nav-menu"  style={{marginLeft: 10, listStyle: 'none'}}>Contacte</li>
             </Link>
 
         </ul>
