@@ -118,3 +118,28 @@ ul{
   color:black;  
   transition:0.5s;
 }
+
+
+.FormInscriptionForm{
+  display: inline-block;
+  margin-top: 6px;
+}
+
+.FormInscriptioninput{
+  padding: 10px;
+  font-size: inherit;
+  display: block;
+  margin-bottom: 4px;
+  border: none;
+  border-radius: 6px;
+}
+
+
+.FormInscriptioninput[type="submit"] {
+  margin-top: 5px;
+  padding: auto;
+  text-align: center;
+  margin: 5px auto 10px;
+  border: none;
+  cursor: pointer;
+}

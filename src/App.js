@@ -18,9 +18,10 @@ const firebase = require("firebase");
     require("firebase/firestore");
 
     firebase.initializeApp({
-    apiKey: 'AIzaSyBggSxraSXC0zUGPIa96BhPu8x-ZvpeBRU',
-    authDomain: 'eur3',
-    projectId: 'cpinfo-s-n-s'
+      apiKey: 'AIzaSyBggSxraSXC0zUGPIa96BhPu8x-ZvpeBRU',
+      authDomain: 'eur3',
+      messagingSenderId: "553966352030",
+      projectId: 'cpinfo-s-n-s'
     });
     
 
@@ -45,8 +46,7 @@ function App() {
               <Route path="/Search" exact component={Search}/>
               <Route path="/Contact" exact component={Contact}/>
               <Route path="/Connexion" exact component={Connexion}/>
-              <Route path="/Inscription" exact component={Inscription}/>
-              
+              <Route path="/Inscription" exact component={Inscription} />          
           </Router>
           </div>
           </nav>
