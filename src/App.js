@@ -30,8 +30,16 @@ function App() {
   return (    
     <div className="App">
       <header className="App-header">        
-          <nav>            
+          
+            <div>
+              <ul style={{display:"flex", float: "right", marginLeft:"-15%", marginRight:"3%"}}>
+                <li style={{listStyle:"none", marginRight:"10%"}}><a style={{color:"#23a2a4"}} href="http://localhost:3000/Inscription">Inscription</a></li> 
+                /
+                <li style={{listStyle:"none", marginLeft:"2%"}}><a style={{color:"#23a2a4"}} href="http://localhost:3000/Connexion">Connexion</a></li>
+              </ul>
+            </div>          
             <img src={logo} alt="logo" id="header-logo"></img>
+            <nav>  
             <div id="menu">
               <Router> 
                 <Navigation/>
