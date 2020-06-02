@@ -4,6 +4,10 @@ import logo from './logo.png';
 import Appart1_1 from './photo/Appart1_1.PNG';
 import Appart1_2 from './photo/Appart1_2.PNG';
 import Appart1_3 from './photo/Appart1_3.PNG';
+import Appart2_1 from './photo/Appart2_1.PNG';
+import Appart2_2 from './photo/Appart2_2.PNG';
+import Appart2_3 from './photo/Appart2_3.PNG';
+import Appart2_4 from './photo/Appart2_4.PNG';
 
 import './App.css';
 import { _bucketWithOptions } from 'firebase-functions/lib/providers/storage';
@@ -59,7 +63,8 @@ function Accueil(){
         
         <section id="WeeklySec">
             <h1 style={{textDecoration:"underline"}}>Les logements de la semaine</h1>
-            <div id="slider">
+            <ul style={{display:'flex'}}>
+            <div id="slider" style={{marginRight: 35}}>
                 <figure>
                     
                         <img src={Appart1_1} id="img_renseignement2"></img>
@@ -69,15 +74,30 @@ function Accueil(){
                     
                     
                         <img src={Appart1_3} id="img_renseignement2" ></img>
-                </figure>
+                </figure>                
                
             </div>
+
+            <div id="slider" style={{marginTop: 0}}>
+            <figure>
+  
+                    
+                    <img src={Appart2_1} id="img_renseignement2"></img>                
+         
+                    <img src={Appart2_2} id="img_renseignement2"></img>                
+                
+                    <img src={Appart2_3} id="img_renseignement2" ></img>
+
+                    <img src={Appart2_4} id="img_renseignement2" ></img>
+            </figure>
+            </div>
+            </ul>
 
 
         </section>
 
         <section id="slogan">
-            <img src={logo} alt="logo" id="header-logo"></img>
+            <img src={logo} alt="logo" id="header-logo" style={{marginLeft: -40}}></img>
             <h5>Rejoignez nous et commencez l'aventure</h5>
             <button id="join">Rejoignez-nous</button>
 
