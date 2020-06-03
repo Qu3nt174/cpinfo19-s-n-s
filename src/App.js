@@ -72,7 +72,13 @@ function App() {
       
 
       
-      <footer className="App-footer">#FreeJean-Chorrizo</footer>
+      <footer className="App-footer" style={{backgroundColor:"#23a2a4"}}>
+        &copy;2020 S&S-Prod
+        <div style={{marginTop:"2%"}}>
+          Suivez nous sur les différentes applications
+          
+        </div>
+      </footer>
 
     </div>
   );
