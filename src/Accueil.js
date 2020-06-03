@@ -1,17 +1,19 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import {Link} from 'react-router-dom';
 import logo from './logo.png';
 import Appart1_1 from './photo/Appart1_1.PNG';
 import Appart1_2 from './photo/Appart1_2.PNG';
 import Appart1_3 from './photo/Appart1_3.PNG';
+import firebase from 'firebase';
 
 import './App.css';
 import { _bucketWithOptions } from 'firebase-functions/lib/providers/storage';
 
 
-function Accueil(){
+function Accueil({user}){
 
 
+    console.log("hello", user);
     return(
         
      <div className="App">
@@ -23,12 +25,26 @@ function Accueil(){
         </h1>
             <h5>Bienvenue Chez Vous</h5>
             <br></br>
-            <div style={{display:"flex"}}>
-                <Link to="/Connexion"><li id="test" style={{listStyle: 'none'}}>Connexion</li></Link>
-                <Link to="/Inscription"><li id="test" style={{listStyle: 'none'}}>Inscription</li></Link>
-            </div>
-              
+           
+                {
+                    user === null?
+                    ( 
+                        <div style={{display:"flex"}}>
+                            <Link to="/Connexion"><li id="test" style={{listStyle: 'none'}}>Connexion</li></Link>
+                            <Link to="/Inscription"><li id="test" style={{listStyle: 'none'}}>Inscription</li></Link>
+                        </div>    
+                    )
+                :
+                (
+                    <div style={{display:"flex"}}>
+                        <button onClick={() => firebase.auth().signOut()} ><li id="Deconnexion" style={{listStyle: 'none'}}>Se déconnecter</li></button>
+                        <Link to="/MyProfile"><li id="test" style={{listStyle: 'none'}}>Mon Profil</li></Link>
+                    </div>
+                )
+                }
+          
      </section>
+  
 
       <body className="App-body">
 

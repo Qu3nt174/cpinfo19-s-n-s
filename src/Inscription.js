@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import firebase from 'firebase';
 import { useHistory } from "react-router-dom";
+import Swal from 'sweetalert2';
 
 
 function Inscription() {
@@ -29,12 +30,28 @@ function Inscription() {
         }else{
             try {
                 await auth.createUserWithEmailAndPassword(email, pass).then(cred =>{
-                    console.log('OK!');
                 });
+                Swal.fire({
+                    icon: "success",
+                    title: "Inscription effectuée",
+                    text: "Vous vous êtes maintenant inscrit !",
+                    type: "success",
+                    timer: 1000
+                    }).then(() => {
+                       history.push('./');
+                    });
             } catch (error) {
                 console.log('BOOM', error);
                 if (error.code == 'auth/invalid-email') {
-                alert('Adresse email invalide, veuillez réessayer');
+                    alert('Adresse email invalide, veuillez réessayer');
+                }
+                else if(error.code == 'auth/email-already-in-use'){
+                    Swal.fire({
+                        title: 'Erreur!',
+                        text: "Un compte lié à l'adresse renseignée existe déjà. Veuillez vous connecter.",
+                        icon: 'error',
+                        confirmButtonText: 'OK'
+                    })
                 }
             }
         }

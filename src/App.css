@@ -205,3 +205,16 @@ body::-webkit-scrollbar {
   display: none;
 
 }
+
+.creerAnnonce{
+  padding: 10px;
+  font-size: inherit;
+  display: block;
+  margin-bottom: 4px;
+  border: none;
+  border-radius: 6px;
+}
+
+#Deconnexion{
+  background-color: transparent !important;
+}

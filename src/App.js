@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react'
 import logo from './logo.png';
 import './App.css';
 import Accueil from './Accueil';
@@ -9,6 +9,7 @@ import Navigation from './Navigation';
 import Aide from './Aide';
 import Connexion from './Connexion';
 import Inscription from './Inscription';
+import CreerAnnonce from './CreerAnnonce';
 import {Link} from 'react-router-dom';
 
 import {BrowserRouter as Router, Route} from 'react-router-dom'
@@ -28,6 +29,18 @@ const firebase = require("firebase");
 
 function App() {
 
+  const [user, setUser] = useState(null);
+  useEffect(() => {
+      return firebase.auth().onAuthStateChanged((newUser) => {
+          console.log(newUser);
+          if (newUser === null) {
+              setUser(null);
+              return;
+          };
+          setUser({uid: newUser.uid, email: newUser.email})
+      })
+  }, []);
+
   return (    
     <div className="App">
       <header className="App-header">        
@@ -44,13 +57,14 @@ function App() {
             <div id="menu">
               <Router> 
                 <Navigation/>
-                <Route path="/" exact component={Accueil}/>
+                <Route path="/" exact render ={() => <Accueil user= {user}/>} />
                 <Route path="/Logement" exact component={Logement}/>
                 <Route path="/Annonce" exact component={Annonce}/>                
                 <Route path="/Aide" exact component={Aide}/>
                 <Route path="/Contact" exact component={Contact}/>
                 <Route path="/Connexion" exact component={Connexion}/>
                 <Route path="/Inscription" exact component={Inscription}/>
+                <Route path="/CreerAnnonce" exact component={CreerAnnonce}/>
               </Router>
             </div>
           </nav> 
