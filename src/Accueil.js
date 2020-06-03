@@ -26,6 +26,7 @@ function Accueil(){
             Study
         </h1>
             <h5>Bienvenue Chez Vous</h5>
+            <button>test</button>
             <br></br>
             <div style={{display:"flex"}}>
                 <Link to="/Connexion"><li id="test" style={{listStyle: 'none'}}>Connexion</li></Link>
@@ -97,7 +98,7 @@ function Accueil(){
         </section>
 
         <section id="slogan">
-            <img src={logo} alt="logo" id="header-logo" style={{marginLeft: -40}}></img>
+            <img src={logo} alt="logo" id="header-logo" style={{marginLeft: -39}}></img>
             <h5>Rejoignez nous et commencez l'aventure</h5>
             <button id="join">Rejoignez-nous</button>
 
