@@ -68,7 +68,7 @@ function Inscription() {
                 <input className = "FormInscriptioninput" type="text" placeholder="Prénom" name="Prénom" value = {surname} onChange= {(s) => setsurname(s.target.value)} required/>
                 <input className = "FormInscriptioninput" type="email" placeholder="Adresse email" name="mail" value = {email} onChange= {(e) => setemail(e.target.value)} required/>
                 <input className = "FormInscriptioninput" type="password" placeholder="Mot de passe" name="mdp1" value ={pass} onChange = {(p) => setpass(p.target.value)} required/>
-                <input className = "FormInscriptioninput" type="password" placeholder="Confirmer mot de passe" name="mdp2" value ={pass2} onChange = {(p2) => setpass2(p2.target.value)}required/>
+                <input className = "FormInscriptioninput" type="password" placeholder="Confirmer mot de passe" name="mdp2" value ={pass2} onChange = {(p2) => setpass2(p2.target.value)} required/>
                 <input className = "FormInscriptioninput" type="submit" name="valider" value="S'inscrire"/>
             </form>
         </div>

@@ -23,10 +23,10 @@ function Search(){
                  
         </section>
    
-         <body className="App-body">
+         <div className="App-body">
    
            
-       </body>
+       </div>
        </div>
     )
 }

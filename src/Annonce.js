@@ -9,37 +9,69 @@ import CreerAnnonce from './CreerAnnonce';
 import './App.css';
 import { _bucketWithOptions } from 'firebase-functions/lib/providers/storage';
 
-function Annonce(){
-
-
+function Annonce({user}){
     return(
-        <div className="App">
-        
-        <section className="App-body" id="Sec1">  
+        <div className="App-body">
+            {
+                user === null?
+                (
+                    <div>
+                        Désolé, mais vous n'avez pas accès à cette page. Veuillez vous <Link to="/Connexion" className = "LienConnecter" style={{color: 'blue', fontSize: '1em'}}>connecter.</Link>
+                    </div>
+                )
+            :
+                (
+                    <div>
+                        Oui
+                    </div>
+                )
 
-        <Link to ="./CreerAnnonce">
-            <button>
-                Bonjour
-            </button>
-        </Link>
-             
-            <h1 id="oui">
-               Vos Annonces
-               <br></br>
-               
-           </h1>
-            
-                 
-        </section>
-   
-         <body className="App-body">
-   
-          
-   
-   
-       </body>
-       </div>
+            }
+
+
+        </div>
+
     )
+        
 }
 
 export default Annonce;
+
+
+// {/* <div className="App">
+            
+//             <section className="App-body">  
+//                 <h1 id="oui">
+//                     Vos Annonces:
+//                     <br></br>
+//                 </h1>
+//                 {
+//                     user === null?
+//                     ( 
+//                         <div style={{display:"flex"}}>
+//                             <p style={{fontSize: '1em'}}>
+//                                 Désolé, vous ne pouvez pas accéder à cette page si vous n'êtes pas identifié.
+//                                 Veuillez vous <Link to="/Connexion" style={{color: 'black', fontSize: '1em!important'}}>connecter</Link>
+//                             </p> 
+//                         </div>    
+//                     )
+//                 :
+//                 (
+//                     <Link to ="./CreerAnnonce">
+//                         <button>
+//                             Bonjour
+//                         </button>
+//                      </Link>
+//                 )
+//                 } 
+//             </section>
+    
+//             <div className="App-body">
+    
+            
+    
+    
+//         </div>
+//        </div>) */}
+
+

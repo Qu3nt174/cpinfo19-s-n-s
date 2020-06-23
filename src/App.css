@@ -189,9 +189,19 @@ a{
   text-decoration: none;
   color: white;
   text-align: center;
+  /* margin-right: 4%;
+  margin-left: 4%;
+  padding-left: 3%; */
+}
+
+.navLink{
   margin-right: 4%;
   margin-left: 4%;
   padding-left: 3%;
+}
+
+.navButton{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;;
 }
 
 ul{
@@ -256,4 +266,9 @@ body::-webkit-scrollbar {
   color: white;
   font-size: 0.75em;
   margin-left: auto;
+}
+
+.LienConnecter:hover{
+  text-decoration: underline;
+
 }

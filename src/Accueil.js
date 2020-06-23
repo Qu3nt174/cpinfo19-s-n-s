@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import {Link} from 'react-router-dom';
+import {Link, useHistory} from 'react-router-dom';
 import logo from './logo.png';
 import Appart1_1 from './photo/Appart1_1.PNG';
 import Appart1_2 from './photo/Appart1_2.PNG';
@@ -9,13 +9,15 @@ import Appart2_1 from './photo/Appart2_1.PNG';
 import Appart2_2 from './photo/Appart2_2.PNG';
 import Appart2_3 from './photo/Appart2_3.PNG';
 import Appart2_4 from './photo/Appart2_4.PNG';
+import {Deconnexion} from './Connexion'
 
 import './App.css';
 import { _bucketWithOptions } from 'firebase-functions/lib/providers/storage';
 
 
-function Accueil({user}){
 
+function Accueil({user}){
+    let history = useHistory()
 
     console.log("hello", user);
     return(
@@ -33,17 +35,17 @@ function Accueil({user}){
                 {
                     user === null?
                     ( 
-                        <div style={{display:"flex"}}>
-                            <Link to="/Connexion"><li style={{listStyle: 'none'}}>Connexion</li></Link>
-                            <Link to="/Inscription"><li style={{listStyle: 'none'}}>Inscription</li></Link>
+                        <div style={{display:"flex"}} >
+                            <Link to="/Connexion" className = {"navLink"}><li className={"LienConnecter"} style={{listStyle: 'none'}}>Connexion</li></Link>
+                            <Link to="/Inscription" className = {"navLink"}><li className={"LienConnecter"} style={{listStyle: 'none'}}>Inscription</li></Link>
                         </div>    
                     )
                 :
                 (
                     // <li id="test" style={{listStyle: 'none'}}></li>
                     <div style={{display:"flex"}}>
-                        <button id="Deconnexion" onClick={() => firebase.auth().signOut()} >Se déconnecter</button>
-                        <Link to="/MyProfile"><li style={{listStyle: 'none'}}>Mon Profil</li></Link>
+                        <button id="Deconnexion" className = {"navButton", "LienConnecter"} onClick={Deconnexion} >Se déconnecter</button>
+                        <Link to="/MyProfile" className = {"navLink"}><li className={"LienConnecter"} style={{listStyle: 'none'}}>Mon Profil</li></Link>
                     </div>
                 )
                 }
@@ -51,7 +53,7 @@ function Accueil({user}){
      </section>
   
 
-      <body className="App-body">
+      <div className="App-body">
 
         <h1 id="historique">Notre Histoire</h1>
         <br></br>
@@ -116,12 +118,12 @@ function Accueil({user}){
         <section id="slogan">
             <img src={logo} alt="logo" id="header-logo" style={{marginLeft: -39}}></img>
             <h5>Rejoignez nous et commencez l'aventure</h5>
-            <button id="join">Rejoignez-nous</button>
+            <button id="join" onClick ={() => history.push("./Inscription")}>Rejoignez-nous</button>
 
         </section>
 
 
-    </body>
+    </div>
     </div>
 
     )
